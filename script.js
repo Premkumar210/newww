@@ -5,7 +5,9 @@ var container = document.querySelector(".container")
 menuIcon.onclick = function(){
    sidebar.classList.toggle("small-sidebar");
    container.classList.toggle("large-container");
+
 }
+
 function search() {
    var searchQuery = document.getElementById('search-box').value.toLowerCase();
    var pages = {
@@ -148,6 +150,18 @@ document.getElementById('channels-btn').addEventListener('click', function() {
    
   `;
 });
+
+function subscribe() {
+  var btn = document.getElementById('subscribe-btn');
+  if (btn.textContent === 'Subscribe') {
+    btn.style.backgroundColor = 'red';
+    btn.textContent = 'Subscribed';
+  } else {
+    btn.style.backgroundColor = ''; // reset to original color
+    btn.textContent = 'Subscribe';
+  }
+}
+
 
 
 

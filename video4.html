@@ -9,22 +9,26 @@
 <body>
     <nav class="flex-div">
         <div class="nav-left flex-div">
-            <img src="images/menu.png" alt="" class="menu-icon">
-            <img src="images/logo.png" alt="" class="logo">
+            <img src="menu.png" alt="" class="menu-icon">
+            <img src="logo.png" alt="" class="logo">
         </div>
         <div class="nav-middle flex-div">
             <div class="search-container  flex-div">
-                <input type="text" id="search-box" placeholder="Search">
-                <img src="images/search.png" alt="Search" class="search-icon" onclick="search()">
-           </div>
-            <img src="images/voice-search.png" class="mic-icon">
+                 <input type="text" id="search-box" placeholder="Search">
+                 <img src="search.png" alt="Search" class="search-icon" onclick="search()">
+            </div>
+            <img src="voice-search.png"  alt="Mic" class="mic-icon" onclick="startRecording()">
+            <img src="stop-mic.png" alt="Stop" class="stop-icon" onclick="stopRecording()" style="display:none;">
+        </div>
+        
+        
         </div>
         <div class="nav-right flex-div">
-            <a href="index.html"><img src="images/home.png" class="homo-icon"></a>
-            <a href="upload.html"><img src="images/upload.png" class="domo-icon">
-                <a href="update.html"><img src="images/more.png" class="somo-icon">
-                <a href="notification.html"><img src="images/notification.png" class="lomo-icon">
-                <a href="profile.html"><img src="images/prem.png" alt="" class="user-icon"></a>
+            <a href="index.html"><img src="home.png" class="homo-icon"></a>
+            <a href="upload.html"><img src="upload.png" class="domo-icon">
+                <a href="update.html"><img src="more.png" class="somo-icon">
+                <a href="notification.html"><img src="notification.png" class="lomo-icon">
+                <a href="profile.html"><img src="prem.png" alt="" class="user-icon"></a>
         </div>
     </nav>
 
@@ -32,27 +36,27 @@
         <div class="row">
             <div class="play-video">
                 <video controls autoplay>
-                    <source src="images/Part 1 _ Web Designing Malayalam Tutorial.mp4" type="video/mp4">
+                    <source src="Part 1 _ Web Designing Malayalam Tutorial.mp4" type="video/mp4">
                 </video>
 
                 <h3 > Web Designing Malayalam Tutorial</video></h3>
                 <div class="play-video-info">
                     <p>432k Views &bull; 4 years ago</p>
                     <div>
-                        <a href=""><img src="images/like.png">245</a>
-                        <a href=""><img src="images/dislike.png">2</a>
-                        <a href=""><img src="images/share.png">share</a>
-                        <a href=""><img src="images/save.png">save</a>
+                        <a href=""><img src="like.png">245</a>
+                        <a href=""><img src="dislike.png">2</a>
+                        <a href=""><img src="share.png">share</a>
+                        <a href=""><img src="save.png">save</a>
                     </div>
                  </div>
                  <hr>
                  <div class="publisher">
-                    <a href="brototype.html"><img src="images/brotoype.png"></a>
+                    <a href="brototype.html"><img src="brotoype.png"></a>
                     <div>
                         <p>Brototype</p>
                         <span>418k subscribers</span>
                     </div>
-                    <button type="button" >Subscribe</button>
+                    <button id="subscribe-btn" onclick="subscribe()">Subscribe</button>
                  </div>
                  <div class="vid-description">
                     <p>24/7 FREE Telegram Support! Sign Up Now:
@@ -61,18 +65,18 @@
                     <hr>
                     <h4>143 Comments</h4>
                     <div class="add-comment">
-                        <img src="images/prem.png">
+                        <img src="prem.png">
                         <input type="text" placeholder="write comments....">
                     </div>
                     <div class="old-comment">
-                        <img src="images/ajmal.png">
+                        <img src="ajmal.png">
                         <div>
                             <h3>Muhammed Ajmal <span>2 days ago</span></h3>
                             <p>മലയാളത്തിൽ ഉള്ള ഏറ്റവും നല്ല Web Designing course. ഇതിലും എളുപ്പമായി പറഞ്ഞു തരാൻ പറ്റുമെന്ന്  തോന്നുന്നില്ല. Full  course കണ്ടു കഴിഞ്ഞു. ഒരുപാടു interesting  ആയ content ആണ്. Programming ഇൽ  already experience ഉള്ളവർക്കും, തുടക്കക്കാർക്കും ഒരുപോലെ ഉപയോഗപ്പെടും എന്നുറപ്പു. Big thanks to the whole team of crossroads. കട്ട സപ്പോർട്ട് ..</p>
                             <div class="comment-action">
-                                <img src="images/like.png">
+                                <img src="like.png">
                                 <span>254</span>
-                                <img src="images/dislike.png">
+                                <img src="dislike.png">
                                 <span>2</span>
                                 <span>REPLY</span>
                                 <a href="">All replies</a>
@@ -80,7 +84,7 @@
                         </div>
                     </div>
                     <div class="old-comment">
-                        <img src="images/village-cooking.png">
+                        <img src="village-cooking.png">
                         <div>
                             <h3>Vinoth kumar <span>2 days ago</span></h3>
                             <p>
@@ -88,9 +92,9 @@
                                 A treasure for beginners.
                                 Thank you Nikil sir and the entire crossroad team.</p>
                             <div class="comment-action">
-                                <img src="images/like.png">
+                                <img src="like.png">
                                 <span>254</span>
-                                <img src="images/dislike.png">
+                                <img src="dislike.png">
                                 <span>2</span>
                                 <span>REPLY</span>
                                 <a href="">All replies</a>
@@ -102,7 +106,7 @@
             <div class="right-sidebar">
                 
                 <div class="side-video-list">
-                    <a href="video2.html" class="small-thumbnail"><img src="images/thumbnail12.png"></a>
+                    <a href="video2.html" class="small-thumbnail"><img src="thumbnail12.png"></a>
                     <div class="vid-info">
                         <a href="video2.html">Hanumankind – Big Dawgs | Ft. Kalmi (Official Music Video) | Def Jam India</a>
                         <p>Hanumankind</p>
@@ -110,7 +114,7 @@
                     </div>
                 </div>
                 <div class="side-video-list">
-                    <a href="video3.html" class="small-thumbnail"><img src="images/thumbnail13.png"></a>
+                    <a href="video3.html" class="small-thumbnail"><img src="thumbnail13.png"></a>
                     <div class="vid-info">
                         <a href="video3.html">Messi Goals You Have To See Again</a>
                         <p>Messi Fan Page</p>
@@ -119,7 +123,7 @@
                 </div>
                 
                 <div class="side-video-list">
-                    <a href="video5.html" class="small-thumbnail"><img src="images/thumnail15.png"></a>
+                    <a href="video5.html" class="small-thumbnail"><img src="thumnail15.png"></a>
                     <div class="vid-info">
                         <a href="video5.html">Kolkata Rape & Murder Hearing In SC LIVE: Supreme Court Questions FIR Timing, Slams Mamata Govt</a>
                         <p>India Today</p>
@@ -127,7 +131,7 @@
                     </div>
                 </div>
                 <div class="side-video-list">
-                    <a href="video6.html" class="small-thumbnail"><img src="images/thumbnail16.png"></a>
+                    <a href="video6.html" class="small-thumbnail"><img src="thumbnail16.png"></a>
                     <div class="vid-info">
                         <a href="video6.html">FRIED CHICKEN LEGS | 500 Crispy Chicken Leg Fry Recipe Cooking in Village | Fried Leg Piece</a>
                         <p>Village Cooking Channel</p>
@@ -135,7 +139,7 @@
                     </div>
                 </div>
                 <div class="side-video-list">
-                    <a href="video7.html" class="small-thumbnail"><img src="images/thumbnail17.png"></a>
+                    <a href="video7.html" class="small-thumbnail"><img src="thumbnail17.png"></a>
                     <div class="vid-info">
                         <a href="video7.html">10K🔥💥 Instagram Followers Celebration 🎉 | Bucket Biriyani | Beef & Chicken Steak | TE Vlog</a>
                         <p>TE Vlogs</p>
@@ -143,7 +147,7 @@
                     </div>
                 </div>
                 <div class="side-video-list">
-                    <a href="video8.html" class="small-thumbnail"><img src="images/thumnail18.png"></a>
+                    <a href="video8.html" class="small-thumbnail"><img src="thumnail18.png"></a>
                     <div class="vid-info">
                         <a href="video8.html">24 Hours Hospitals LockDown! 😱 | Madan Gowri | Tamil | MG</a>
                         <p>Madan Gowri</p>
@@ -151,7 +155,7 @@
                     </div>
                 </div>
                 <div class="side-video-list">
-                    <a href="video9.html" class="small-thumbnail"><img src="images/thumbnail19.png"></a>
+                    <a href="video9.html" class="small-thumbnail"><img src="thumbnail19.png"></a>
                     <div class="vid-info">
                         <a href="video9.html">Introducing a New Education Model | 100% proven</a>
                         <p>Brototype</p>
@@ -159,7 +163,7 @@
                     </div>
                 </div>
                 <div class="side-video-list">
-                    <a href="video10.html" class="small-thumbnail"><img src="images/thumnail20.png"></a>
+                    <a href="video10.html" class="small-thumbnail"><img src="thumnail20.png"></a>
                     <div class="vid-info">
                         <a href="video10.html">2021 Kerala Rewind !!</a>
                         <p>Arjyou</p>
@@ -167,7 +171,7 @@
                     </div>
                 </div>
                 <div class="side-video-list">
-                    <a href="video.html" class="small-thumbnail"><img src="images/thumnail11.png"></a>
+                    <a href="video.html" class="small-thumbnail"><img src="thumnail11.png"></a>
                     <div class="vid-info">
                         <a href="video.html">Revealing How I Made My Top 10 Travel Tricks</a>
                         <p>Zack King</p>
@@ -175,7 +179,7 @@
                     </div>
                 </div>
                 <div class="side-video-list">
-                    <a href="video4.html" class="small-thumbnail"><img src="images/thumnail14.png"></a>
+                    <a href="video4.html" class="small-thumbnail"><img src="thumnail14.png"></a>
                     <div class="vid-info">
                         <a href="video4.html"> Web Designing Malayalam Tutorial</a>
                         <p>Brototype</p>

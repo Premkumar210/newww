@@ -242,6 +242,8 @@ nav{
 
 
 /*.............play video....*/
+
+
 .homo-icon{
     margin-top: -1px;
 }
@@ -338,7 +340,8 @@ nav{
     color: #5a5a5a;
 
 }
-.publisher button{
+#subscribe-btn {
+
     background: rgb(0, 0, 0);
     color: #fff;
     padding: 8px 30px;
